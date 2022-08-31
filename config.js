@@ -1,27 +1,26 @@
 module.exports = {
-  OWNER_IDS: [], // Bot owner ID's
+  OWNER_IDS: "944268173623062539", // Bot owner ID's
   PREFIX: "!", // Default prefix for the bot
-  SUPPORT_SERVER: "", // Your bot support server
   PRESENCE: {
     ENABLED: true, // Whether or not the bot should update its status
-    STATUS: "online", // The bot's status [online, idle, dnd, invisible]
+    STATUS: "idle", // The bot's status [online, idle, dnd, invisible]
     TYPE: "WATCHING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
-    MESSAGE: "{members} members in {servers} servers", // Your bot status message
+    MESSAGE: "{members} members", // Your bot status message
   },
   DASHBOARD: {
-    enabled: false, // enable or disable dashboard
+    enabled: true, // enable or disable dashboard
     baseURL: "http://localhost:8080", // base url
     failureURL: "http://localhost:8080", // failure redirect url
     port: "8080", // port to run the bot on
   },
   INTERACTIONS: {
-    SLASH: false, // Should the interactions be enabled
-    CONTEXT: false, // Should contexts be enabled
-    GLOBAL: false, // Should the interactions be registered globally
-    TEST_GUILD_ID: "xxxxxxxxxx", // Guild ID where the interactions should be registered. [** Test you commands here first **]
+    SLASH: true, // Should the interactions be enabled
+    CONTEXT: true, // Should contexts be enabled
+    GLOBAL: true, // Should the interactions be registered globally
+    TEST_GUILD_ID: "944268652314783745", // Guild ID where the interactions should be registered. [** Test you commands here first **]
   },
   XP_SYSTEM: {
-    COOLDOWN: 5, // Cooldown in seconds between messages
+    COOLDOWN: 10, // Cooldown in seconds between messages
     DEFAULT_LVL_UP_MSG: "{m}, You just advanced to **Level {l}**",
   },
   MISCELLANEOUS: {
@@ -30,7 +29,7 @@ module.exports = {
   ECONOMY: {
     CURRENCY: "₪",
     DAILY_COINS: 100, // coins to be received by daily command
-    MIN_BEG_AMOUNT: 100, // minimum coins to be received when beg command is used
+    MIN_BEG_AMOUNT: 70, // minimum coins to be received when beg command is used
     MAX_BEG_AMOUNT: 2500, // maximum coins to be received when beg command is used
   },
   SUGGESTIONS: {
@@ -53,7 +52,7 @@ module.exports = {
       {
         host: "ger.lavalink.mitask.tech",
         port: 2333,
-        password: "lvserver",
+        password: "youshallnotpass",
         identifier: "German Link",
         retryDelay: 5000,
         secure: false,
@@ -61,7 +60,7 @@ module.exports = {
       {
         host: "usa.lavalink.mitask.tech",
         port: 2333,
-        password: "lvserver",
+        password: "youshallnotpass",
         identifier: "USA Link",
         retryDelay: 5000,
         secure: false,
@@ -94,8 +93,8 @@ module.exports = {
   /* Maximum number of keys that can be stored */
   CACHE_SIZE: {
     GUILDS: 100,
-    USERS: 10000,
-    MEMBERS: 10000,
+    USERS: 100000,
+    MEMBERS: 100000,
   },
   MESSAGES: {
     API_ERROR: "Unexpected Backend Error! Try again later or contact support server",
