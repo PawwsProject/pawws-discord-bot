@@ -1,5 +1,5 @@
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
-const { EMBED_COLORS, SUPPORT_SERVER, DASHBOARD } = require("@root/config");
+const { EMBED_COLORS, DASHBOARD } = require("@root/config");
 const { timeformat } = require("@utils/miscUtils");
 const os = require("os");
 const { stripIndent } = require("common-tags");
@@ -71,9 +71,9 @@ module.exports = (client) => {
   let components = [];
   components.push(new MessageButton().setLabel("Invite Link").setURL(client.getInvite()).setStyle("LINK"));
 
-  if (SUPPORT_SERVER) {
-    components.push(new MessageButton().setLabel("Support Server").setURL(SUPPORT_SERVER).setStyle("LINK"));
-  }
+  // if (SUPPORT_SERVER) {
+  //   components.push(new MessageButton().setLabel("Support Server").setURL(SUPPORT_SERVER).setStyle("LINK"));
+  // }
 
   if (DASHBOARD.enabled) {
     components.push(new MessageButton().setLabel("Dashboard Link").setURL(DASHBOARD.baseURL).setStyle("LINK"));

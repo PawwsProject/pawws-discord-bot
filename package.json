@@ -3,7 +3,7 @@
   "version": "4.2.3",
   "description": "An open-source, multipurpose discord bot built using discord-js",
   "main": "bot.js",
-  "author": "Sai Teja M",
+  "author": "PawwsBot",
   "license": "ISC",
   "engines": {
     "node": ">=16.6.0"

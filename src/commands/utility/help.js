@@ -1,5 +1,5 @@
 const { Command, CommandCategory, BotClient } = require("@src/structures");
-const { EMBED_COLORS, SUPPORT_SERVER } = require("@root/config.js");
+const { EMBED_COLORS } = require("@root/config.js");
 const {
   MessageEmbed,
   MessageActionRow,
@@ -129,9 +129,8 @@ async function getHelpMenu({ client, guild }) {
     .setDescription(
       "**About Me:**\n" +
         `Hello I am ${guild.me.displayName}!\n` +
-        "A cool multipurpose discord bot which can serve all your needs\n\n" +
-        `**Invite Me:** [Here](${client.getInvite()})\n` +
-        `**Support Server:** [Join](${SUPPORT_SERVER})`
+        `**Website:** [Here](https://pawws.xyz)\n` +
+        `**Twitter:** [Here](https://twitter.com/_pawws)`
     );
 
   return {

@@ -20,8 +20,8 @@ module.exports = {
     TEST_GUILD_ID: "944268652314783745", // Guild ID where the interactions should be registered. [** Test you commands here first **]
   },
   XP_SYSTEM: {
-    COOLDOWN: 10, // Cooldown in seconds between messages
-    DEFAULT_LVL_UP_MSG: "{m}, You just advanced to **Level {l}**",
+    COOLDOWN: 1, // Cooldown in seconds between messages
+    DEFAULT_LVL_UP_MSG: "{m}, Congratulation you just advanced to **Level {l}**🎉",
   },
   MISCELLANEOUS: {
     DAILY_COINS: 100, // coins to be received by daily command

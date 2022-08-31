@@ -1,7 +1,7 @@
 const { Command } = require("@src/structures");
 const { MessageEmbed, MessageButton, MessageActionRow, CommandInteraction } = require("discord.js");
 const { timeformat } = require("@utils/miscUtils");
-const { EMBED_COLORS, SUPPORT_SERVER, DASHBOARD } = require("@root/config.js");
+const { EMBED_COLORS, DASHBOARD } = require("@root/config.js");
 const botstats = require("../shared/botstats");
 
 module.exports = class BotCommand extends Command {
@@ -79,9 +79,9 @@ function botInvite(client) {
   let components = [];
   components.push(new MessageButton().setLabel("Invite Link").setURL(client.getInvite()).setStyle("LINK"));
 
-  if (SUPPORT_SERVER) {
-    components.push(new MessageButton().setLabel("Support Server").setURL(SUPPORT_SERVER).setStyle("LINK"));
-  }
+  // if (SUPPORT_SERVER) {
+  //   components.push(new MessageButton().setLabel("Support Server").setURL(SUPPORT_SERVER).setStyle("LINK"));
+  // }
 
   if (DASHBOARD.enabled) {
     components.push(new MessageButton().setLabel("Dashboard Link").setURL(DASHBOARD.baseURL).setStyle("LINK"));
