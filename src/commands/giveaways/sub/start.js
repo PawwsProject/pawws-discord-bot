@@ -28,7 +28,7 @@ module.exports = async (member, giveawayChannel, duration, prize, winners, host)
         giveawayEnded: "🐾 **GIVEAWAY ENDED** 🐾",
         inviteToParticipate: "React 🎁 to enter the giveaway",
         dropMessage: "Be the first to react with 🎁 to win!",
-        hostedBy: `\nHosted by: ${host.tag}`,
+        hostedBy: `\nHosted by: ${host}`,
       },
     });
 
