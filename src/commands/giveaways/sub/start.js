@@ -22,10 +22,10 @@ module.exports = async (member, giveawayChannel, duration, prize, winners, host)
       prize,
       winnerCount: winners,
       hostedBy: host,
-      thumbnail: "https://i.imgur.com/DJuTuxs.png",
+      thumbnail: "https://firebasestorage.googleapis.com/v0/b/boxcube-33f6d.appspot.com/o/pawws%2FGIVEAWAY.png?alt=media&token=df431b6b-9fac-4dc6-a197-f2ddcb8ddd67",
       messages: {
-        giveaway: "🎉 **GIVEAWAY** 🎉",
-        giveawayEnded: "🎉 **GIVEAWAY ENDED** 🎉",
+        giveaway: "🐾 **GIVEAWAY** 🐾",
+        giveawayEnded: "🐾 **GIVEAWAY ENDED** 🐾",
         inviteToParticipate: "React 🎁 to enter the giveaway",
         dropMessage: "Be the first to react with 🎁 to win!",
         hostedBy: `\nHosted by: ${host.tag}`,
